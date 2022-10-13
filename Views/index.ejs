@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Biscuits App</title>
+  </head>
+  <body>
+    <h1>Biscuits index page</h1>
+
+    <ul>
+        <% for(let i = 0; i < Biscuits.length; i++) { %>
+        <li>
+            <a href="/budget/<%= i %>"> <%= Biscuits[i].name %></a>
+        </li>
+        <% } %>
+    </ul>
+    <nav>
+      <a href="/budget/new">Create a New Biscuit</a>
+    </nav>
+  </body>
+</html>
