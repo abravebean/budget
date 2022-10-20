@@ -1,12 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Fruits App</title>
-  </head>
-  <body>
-    <h1>Fruits show page</h1>
-    The <%=Fruit.name; %> is <%=Fruit.color; %>. <% if(Fruit.readyToEat ===
-    true){ %> It is ready to eat <% } else { %> It is not ready to eat <% } %>
-  </body>
+<html lang="en">
+<head
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Show EJS</title>
+</head>
+<body>
+    <div class="container">
+        <h1><%= budget.name %></h1>
+        
+        <button><a href="/budgets">back</a></button>
+        <%for(let key in budget){ %>
+            <div class="row table">
+                <table class="u-full-width">
+                    <thead>
+                        <tr> 
+                            <h2><%= key %></h2><br>
+                        </tr>
+                        <tbody>
+                        
+                            <td>
+                                <h4><%= budget[key] %></h4>
+                            </td>
+                        
+                    </tbody>
+                </thead>
+            </table>
+        </div>
+            
+     <% } %>
+    </div>
+</body>
 </html>

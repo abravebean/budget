@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Create a new Biscoff</title>
-  </head>
-  <body>
-    <h1>New Biscoff page</h1>
-    <!--  NOTE: action will be the route, method will be the HTTP verb-->
-    <form action="/bakedgoods" method="POST">
-        date: <input type="text" name="date" /><br />
-        Name: <input type="text" name="name" /><br />
-      Amount: <input type="text" name="Amount" /><br />
-      
-      <input type="submit" value="Create Biscoff" />
-    </form>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/normalize.css" />
+    <link rel="stylesheet" href="/skeleton.css" />
+    <link rel="stylesheet" href="/css/main.css">
+    <title>New EJS</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Make A New Entry</h1>
 
-  </body>
+        <form action="/budgets" method="POST">
+            <input type="date" name="date" placeholder="Enter Date"><br>
+            
+            <input type="text"  name="name" placeholder="Name"><br>
+            
+            <input type="number"  name="amount" placeholder="Amount"><br>
+            
+            <input type="text"  name="from" placeholder="From" ><br>
+            
+            <input type="text"  name="tags" placeholder="Tags"><br>
+            
+            <input type="submit"  submit="submit" value="Create">
+        </form>
+    </div>
+</body>
 </html>

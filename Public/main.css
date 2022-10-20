@@ -1,0 +1,13 @@
+
+body{
+    background-color: rgb(255, 248, 248);
+    color: black;
+}
+.table td{
+    /* border: 2px solid red; */
+    /* color: white; */
+    text-align: left;
+}
+tr{
+    color:black;
+}
