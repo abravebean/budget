@@ -4,7 +4,7 @@ const app = express();
 const port = 3000;
 app.use(express.static(__dirname + '/public'))
 
-//MIDDLEWARE
+//MIDDLEWAR
 
 app.use(express.urlencoded({ extended: false }))
 
